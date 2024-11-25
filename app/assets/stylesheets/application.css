@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+ .letters{
+  list-style: none;
+  display: flex;
+ }
+.letter-item {
+  margin: 20px;
+  background-color: rgb(69, 138, 241);
+  padding: 20px;
+  font-size:xx-large;
+  font-weight: bolder;
+  color: white;
+  box-shadow: 2px 2px 2px gray;
+  height: 30px;
+  text-align: center;
+  aspect-ratio: 1;
+  border-radius: 4px;
+}
+
+.form{
+  width: 90%;
+  height: 40px;
+}
