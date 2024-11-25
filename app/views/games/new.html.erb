@@ -2,17 +2,11 @@
 <p>Find me in app/views/games/new.html.erb</p> %>
 
 <h1>New Game</h1>
-<ul class="letters">
-  <li class="letter-item"><%= @letters[0]%></li>
-  <li class="letter-item"><%= @letters[1]%></li>
-  <li class="letter-item"><%= @letters[1]%></li>
-  <li class="letter-item"><%= @letters[3]%></li>
-  <li class="letter-item"><%= @letters[4]%></li>
-  <li class="letter-item"><%= @letters[5]%></li>
-  <li class="letter-item"><%= @letters[6]%></li>
-  <li class="letter-item"><%= @letters[7]%></li>
-  <li class="letter-item"><%= @letters[8]%></li>
-  <li class="letter-item"><%= @letters[9]%></li>
+  <ul class="letters">
+  <% @letters.each do |item| %>
+  <li class="letter-item"><%=item%></li>
+<%end%>
+
 </ul>
 
 <p>What is the longest word you can find ?</p>
